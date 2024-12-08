@@ -11,7 +11,7 @@ app.use(cors());
 app.use(express.json());
 
 // MongoDB URI
-const uri = `mongodb://${process.env.USER}:${process.env.PASS}@cluster0-shard-00-00.fk8o9.mongodb.net:27017,cluster0-shard-00-01.fk8o9.mongodb.net:27017,cluster0-shard-00-02.fk8o9.mongodb.net:27017/?ssl=true&replicaSet=atlas-hwpwcj-shard-0&authSource=admin&retryWrites=true&w=majority&appName=Cluster0`;
+const uri = `mongodb://Assignment10:28WCLxU5KTBYSVMM@cluster0-shard-00-00.fk8o9.mongodb.net:27017,cluster0-shard-00-01.fk8o9.mongodb.net:27017,cluster0-shard-00-02.fk8o9.mongodb.net:27017/?ssl=true&replicaSet=atlas-hwpwcj-shard-0&authSource=admin&retryWrites=true&w=majority&appName=Cluster0`;
 
 // MongoDB Client
 const client = new MongoClient(uri, {
